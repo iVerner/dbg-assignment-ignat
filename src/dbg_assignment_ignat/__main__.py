@@ -3,7 +3,7 @@ from flask import Flask, request
 
 import json
 
-from morse import Morse
+from .morse import Morse
 
 app = Flask(__name__)
 
@@ -34,7 +34,7 @@ def decode():
     return json.dumps(result)
 
 
-def main(debug):
+def main():
     """Start the program."""
     app.run()
 

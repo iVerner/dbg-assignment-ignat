@@ -24,7 +24,6 @@ setuptools.setup(
 
     install_requires=[
         "flask",
-        # "flask-restx"
     ],
 
     entry_points={
