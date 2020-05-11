@@ -1,4 +1,9 @@
+"""Module for converting between ASCII and Morse code."""
+
+
 class Morse:
+    """Class to handle Morse code."""
+
     morse_set = (
         ('A', '.-'),
         ('B', '-...'),
@@ -48,6 +53,7 @@ class Morse:
 
     @classmethod
     def ascii_to_morse(cls, text):
+        """Convert ASCII to Morse code."""
         txt = text.upper()
 
         result = ' '.join(map(lambda x: cls.to_morse_dict.get(x, '/').replace('  ', ''), txt))
@@ -55,6 +61,7 @@ class Morse:
 
     @classmethod
     def morse_to_ascii(cls, text):
+        """Convert Morse code to ASCII."""
         symbols_list = text.replace('  ', ' * ').split()
 
         result = ''.join(map(lambda x: cls.to_ascii_dict.get(x.replace('*', '  '), '/'), symbols_list))
