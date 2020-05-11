@@ -73,3 +73,13 @@ In order to accomplish the goal your REST webservice should expose two api end p
  - Please submit your solution into this private repository in a separate branch.
  - Please give clear instruction about how to run and test the code. You may add the instructions in this README file.
  - We encourage you to use 4 hours for this assignment.
+
+## Usage instructions:
+ - You have installed flask dependency in an python environment where you want to run service:
+ ```
+ pip install flask
+```
+ - You can run service from the containing module directory with command:
+  ```
+ python3 -m dbg_assignment_ignat
+```

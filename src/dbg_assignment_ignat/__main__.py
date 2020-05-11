@@ -1,7 +1,7 @@
 """Module docstring."""
-from flask import Flask, request
-
 import json
+
+from flask import Flask, request
 
 from .morse import Morse
 
